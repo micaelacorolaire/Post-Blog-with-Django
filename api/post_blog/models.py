@@ -19,7 +19,7 @@ class personal_data_user(models.Model):
 class publications(models.Model):
     title=models.CharField(max_length=5 , null=False)
     content=models.CharField(validators=[MinValueValidator(500)],max_length=1000,null=False)
-    pub_date=models.DateTimeField()
+    pub_date=models.DateField()
     author=models.CharField(max_length=20,null=False)
     
     
